@@ -1,0 +1,128 @@
+/* CSS Document */
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+}
+body {
+	background-color: #cacaca;
+	margin:0;
+	background-image: url(images/RI_bg.jpg);
+	background-repeat: repeat-x; background-position:top;
+}
+
+#bluegradtop {
+	background-image:url(images/blue-gradient-top.jpg); background-repeat:no-repeat;
+	}
+.prodlnkbg {
+	background-image:url(images/images/products_02.gif); background-repeat:repeat-y; vertical-align:top;
+	padding-left:20px; line-height:1.5;
+	}
+.redbold, .redbold a:link, .redbold a:visited {
+	color: #c03;
+	font-weight: bold;
+}
+#printerbox {
+	background-image:url(images/ink-toner_box.jpg); background-repeat:no-repeat;
+	padding-left:20px;
+	}
+#faxbox {
+	background-image:url(images/faxbox.gif); background-repeat:no-repeat; vertical-align:top;
+	}
+.pgbtm {
+	background-image:url(images/images/RI_bg_03.jpg); height:90px; background-repeat:repeat-x;
+	}
+.footer {
+	font-size:10px; color: #003366; }
+.disclaimer {
+	font-size:10px; color:#333333; padding-left:10px; padding-right:10px;
+	}
+a:link {
+	color: #173C66;
+}
+a:visited {
+	color: #173C66;
+}
+a:hover {
+	color: #666666;
+}
+a:active {
+	color: #FF0000;
+}
+
+
+/* printer page */
+
+#printerpage {
+	background-image: url(images/ink-toner_page.jpg); background-repeat:no-repeat; background-position:top;
+	padding-left:20px; padding-right:10px;
+	}
+
+
+/* fax page */
+
+#faxpage {
+	background-image:url(images/faxpage.jpg); background-position:top; background-repeat:no-repeat; padding-left:20px; padding-right:350px;
+	}
+	
+
+/* fuser page */
+
+#fuserpage {
+	background-image:url(images/fuser_page.jpg); background-position:top; background-repeat:no-repeat; padding-left:20px; padding-right:350px;
+	}
+	
+/* back-up media page */
+
+#backuppage {
+	background-image:url(images/backup_page.jpg); background-position:top; background-repeat:no-repeat; padding-left:20px; padding-right:350px;
+	}
+	
+/* other IT supplies page */
+
+#othersuppliespg {
+	background-image:url(images/othersupplies.jpg); background-position:top; background-repeat:no-repeat; padding-left:20px; padding-right:350px;
+	}
+	
+/* other maintennace kit page */
+
+#maintenancekit {
+	background-image: url(images/printermaintenancekits.jpg); background-position:top; background-repeat:no-repeat; padding-left:20px; padding-right:350px;
+	}
+	
+/* cleaning cartridges page */
+
+#cleaningcartridge {
+	background-image: url(images/cleaningcartridges_page.jpg); background-position:top; background-repeat:no-repeat; padding-left:20px; padding-right:380px;
+	}
+
+/*	maintenance service  page */
+
+#maintenancesrvc {
+	background-image: url(images/maintenanceservice_pg.jpg); background-position:top; background-repeat:no-repeat; padding-left:20px; padding-right:420px;
+	}
+
+/* about reliable imaging page */
+#aboutpg {
+	background-image:url(images/aboutri.jpg); background-position:top; background-repeat:no-repeat; padding-left:20px; padding-right:0px;
+	}
+	
+/* contact reliable imaging page */
+#contactpg {
+	background-image:url(images/contact_page.jpg); background-position:top; background-repeat:no-repeat; padding-left:20px;  
+	}
+
+/* policies page */
+#policiespage {
+	background-image:url(images/policiespage.jpg); background-position:top; background-repeat:no-repeat; padding-left:20px; padding-right:20px;
+	}
+	
+/* terms and conditions page */
+#termspage {
+	background-image:url(images/termspage.jpg); background-position:top; background-repeat:no-repeat; padding-left:20px; padding-right:20px;
+	}
+	
+/* managed print services page */
+#mps {
+	background-image:url(images/managedprintservices.jpg); background-position:top; background-repeat:no-repeat; padding-left:20px; padding-right:20px;
+	}

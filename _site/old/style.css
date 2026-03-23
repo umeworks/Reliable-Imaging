@@ -1,0 +1,424 @@
+/* Consolidated legacy + responsive styles for old pages */
+
+body,
+td,
+th {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  background-image: url(images/images/pagebg_01.jpg);
+  background-repeat: repeat-x;
+  background-position: top;
+}
+
+#bluegradtop {
+  background-image: url(images/blue-gradient-top.jpg);
+  background-repeat: no-repeat;
+}
+
+.prodlnkbg {
+  background-image: url(images/images/products_02.gif);
+  background-repeat: repeat-y;
+  vertical-align: top;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+.redbold,
+.redbold a:link,
+.redbold a:visited {
+  color: #c03;
+  font-weight: bold;
+}
+
+#printerbox {
+  background-image: url(images/ink-toner_box.jpg);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+#faxbox {
+  background-image: url(images/faxbox.gif);
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
+
+.pgbtm {
+  background-image: url(images/images/RI_bg_03.jpg);
+  height: 90px;
+  background-repeat: repeat-x;
+}
+
+.footer {
+  font-size: 10px;
+  color: #003366;
+}
+
+.disclaimer {
+  font-size: 10px;
+  color: #333333;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a:link {
+  color: #173c66;
+}
+
+a:visited {
+  color: #173c66;
+}
+
+a:hover {
+  color: #666666;
+}
+
+a:active {
+  color: #ff0000;
+}
+
+.top {
+  width: 100%;
+  height: auto;
+  background-image: url(images/images/pagebg_01.jpg);
+  background-repeat: repeat-x;
+  background-position: top;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.bottom {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #cacaca;
+  background-image: url(images/images/pagebg_02.jpg);
+  background-repeat: repeat-x;
+  padding-bottom: 50px;
+}
+
+/* Legacy page backgrounds */
+#printerpage {
+  background-image: url(images/ink-toner_page.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+#faxpage {
+  background-image: url(images/faxpage.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-right: 350px;
+}
+
+#fuserpage {
+  background-image: url(images/fuser_page.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-right: 350px;
+}
+
+#backuppage {
+  background-image: url(images/backup_page.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-right: 350px;
+}
+
+#othersuppliespg {
+  background-image: url(images/othersupplies.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-right: 350px;
+}
+
+#maintenancekit {
+  background-image: url(images/printermaintenancekits.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-right: 350px;
+}
+
+#cleaningcartridge {
+  background-image: url(images/cleaningcartridges_page.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-right: 380px;
+}
+
+#maintenancesrvc {
+  background-image: url(images/maintenanceservice_pg.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-right: 420px;
+}
+
+#aboutpg {
+  background-image: url(images/aboutri.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+#contactpg {
+  background-image: url(images/contact_page.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+#policiespage {
+  background-image: url(images/policiespage.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#termspage {
+  background-image: url(images/termspage.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#mps {
+  background-image: url(images/managedprintservices.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Responsive index layout */
+.page {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.top-nav a {
+  display: inline-block;
+  padding: 10px 14px;
+  color: #173c66;
+  text-decoration: none;
+  border: 1px solid #c9d5e5;
+  background: linear-gradient(#f5f8fc, #e2eaf5);
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.top-nav a:hover {
+  background: linear-gradient(#e9eff8, #d8e3f1);
+}
+
+.guarantee {
+  width: 100%;
+  text-align: right;
+}
+
+.guarantee a {
+  font-size: 18px;
+  color: #cc0033;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hero {
+  margin-top: 6px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.primary {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.intro {
+  background: #ffffff url(images/ink-toner_box.jpg) no-repeat top left;
+  padding: 60px 18px 18px;
+  box-sizing: border-box;
+  min-height: 300px;
+}
+
+.intro .cta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.intro .cta-row img {
+  max-width: 100%;
+  height: auto;
+}
+
+.products {
+  background: #f3f7fc;
+  border: 1px solid #d6e0ed;
+}
+
+.products-header,
+.products-footer {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.products-body {
+  background: url(images/images/products_02.gif) repeat-y;
+  padding: 14px 20px;
+}
+
+.products-body p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.order-now {
+  display: inline-block;
+  margin-top: 12px;
+  color: #cc0033;
+  font-weight: bold;
+}
+
+.category-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.category-grid a {
+  display: block;
+}
+
+.category-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.disclaimer {
+  margin: 12px 0 0;
+  padding: 0;
+}
+
+.bottom {
+  padding: 24px 0 50px;
+  margin-top: 12px;
+}
+
+.footer-wrap {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right p {
+  margin: 0 0 8px;
+}
+
+@media (max-width: 980px) {
+  .primary {
+    grid-template-columns: 1fr;
+  }
+
+  .products {
+    max-width: 420px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .guarantee,
+  .top-nav {
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .footer-wrap {
+    flex-direction: column;
+  }
+
+  .footer-right {
+    text-align: left;
+  }
+}
+
+@media (max-width: 560px) {
+  .page {
+    padding: 0 10px;
+  }
+
+  .top-nav a {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro {
+    padding-top: 18px;
+    background-image: none;
+    min-height: 0;
+  }
+
+  .guarantee a {
+    font-size: 16px;
+  }
+}
