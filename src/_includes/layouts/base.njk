@@ -4,15 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title or "Reliable Imaging" }}</title>
-    <link rel="stylesheet" href="/Reliable_Imaging/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="container">
       {% include "components/header.njk" %}
       <main>
-        {% if page.url != "/index.html" and title %}
-          <h1 class="page-title">{{ title }}</h1>
-        {% endif %}
         {{ content | safe }}
       </main>
       {% include "components/footer.njk" %}
