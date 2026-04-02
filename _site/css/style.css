@@ -30,6 +30,7 @@ html {
 }
 
 body {
+  display:flex;
   margin: 0;
   color: var(--color-text);
   background: var(--color-white);
@@ -37,12 +38,19 @@ body {
   line-height: 1.5;
 }
 
+main {
+  flex:1;
+}
+
 /* Basic link states */
 a:link,
 a:visited,
-a:hover,
 a:active {
   color: var(--color-primary);
+}
+
+a:hover {
+  color: var(--color-text);
 }
 
 /* Responsive images */
@@ -63,8 +71,7 @@ header {
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem;
-  border-radius: var(--radius);
-  margin: 1rem 0;
+  margin: 0;
 }
 
 header img {
@@ -84,16 +91,24 @@ nav ul {
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 0.5rem;
-  background-color: transparent;
 }
 
+
 nav a {
+  font-size: 1.125rem;
+  font-weight: 600;
   display: block;
   padding: 0.6rem 0.9rem;
   text-decoration: none;
-  border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
-  border-radius: var(--radius);
-  background: color-mix(in srgb, var(--color-white) 55%, var(--color-bg));
+
+}
+
+nav a:active, nav a:link, nav a:visited{
+  color: var(--color-footer);
+}
+
+nav a:hover {
+  color: var(--color-text);
 }
 
 /* HTML Content Container */
@@ -130,6 +145,7 @@ margin-block: 2.5rem;}
 }
 
 .printer-cartridges {
+  flex:1;
   align-self:stretch;
   width: min(100%, 700px);
   min-height: 300px;
@@ -144,8 +160,7 @@ margin-block: 2.5rem;}
 
 .hero {
   min-height: 205px;
-  margin: 1rem 0;
-  border-radius: var(--radius);
+  margin: 0;
   background-color: var(--color-white);
   background-image: url("../images/home-page-main-image_03032021.png");
   background-repeat: no-repeat;
@@ -165,12 +180,12 @@ footer {
   grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr);
   gap: 1rem;
   padding: 1rem;
-  border-radius: var(--radius);
-  margin: 2rem 0 1rem;
+  margin-top: 2rem;
 }
 
 footer p {
   margin: 0 0 0.5rem;
+  color: var(--color-footer);
 }
 
 footer section:last-child {
@@ -287,7 +302,7 @@ footer section:last-child {
 
 .mps-lead {
   font-size: 1.05rem;
-  color: #b42318;
+  color: var(--color-red);
 }
 
 .mps-benefits {
@@ -331,9 +346,10 @@ footer section:last-child {
 }
 
 .mps-contact {
+  width: 300px;
   padding: 1.25rem;
   border-radius: var(--radius);
-  background: #a61b29;
+  background: var(--color-red);
   color: var(--color-white);
 }
 
@@ -342,6 +358,7 @@ footer section:last-child {
 }
 
 .mps-contact p {
+  text-align: center;
   margin-top: 0;
 }
 
@@ -385,16 +402,6 @@ footer section:last-child {
   nav a {
     text-align: center;
   }
-
-  footer {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  footer section:last-child {
-    text-align: center;
-  }
-
   .hero {
     min-height: 140px;
     background-size: contain;
