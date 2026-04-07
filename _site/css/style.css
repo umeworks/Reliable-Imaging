@@ -145,17 +145,40 @@ margin-block: 2.5rem;}
 }
 
 .printer-cartridges {
-  flex:1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 300px);
+  grid-template-areas:
+    "title title"
+    "text image";
+  align-items: start;
+  gap: 1rem;
   align-self:stretch;
   width: min(100%, 700px);
   min-height: 300px;
-  padding: 3.75rem 1.5rem 1.5rem;
+  padding: 0 1.5rem 1.5rem;
   border-radius: var(--radius);
-  background-color: var(--color-white);
-  background-image: url("../images/ink-toner_box.jpg");
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: cover;
+  background-color: #dfe0da;
+  overflow: hidden;
+}
+
+.printer-cartridges__title {
+  grid-area: title;
+  width: calc(100% + 3rem);
+  max-width: none;
+  height: auto;
+  margin-inline: -1.5rem;
+}
+
+.printer-cartridges .text_container {
+  grid-area: text;
+}
+
+.printer-cartridges__image {
+  grid-area: image;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  justify-self: end;
 }
 
 .hero {
@@ -465,9 +488,27 @@ footer section:last-child {
   }
 
   .printer-cartridges {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "text"
+      "image";
     min-height: auto;
-    padding-top: 1.5rem;
-    background-size: contain;
+    padding: 0 0 1rem 0;
+  }
+
+  .printer-cartridges__title {
+    width: calc(100% + 2rem);
+    margin-inline: -1rem;
+    height: 45px;
+  }
+
+  .printer-cartridges__image {
+    justify-self: center;
+  }
+
+  .text_container {
+    padding: 0 1rem;
   }
 
   .mps-benefits {
