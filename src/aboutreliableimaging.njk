@@ -1,12 +1,14 @@
 ---
 layout: layouts/base.njk
 title: "About Reliable Imaging Computer Products, Inc."
+headerImage: "/images/headers-about-reliableimaging.png"
 permalink: "/aboutreliableimaging.html"
 ---
 <section class="legacy-layout">
   <article class="legacy-content legacy-aboutpg">
-  <h1 class="page-title">{{ title }}</h1>
-    <p align="center"><strong><br />
+  <h1><img src={{ headerImage }} alt= {{ title }} /></h1>
+  <div class = "content">
+    <p align="center"><strong>
       We are committed to being 
       the <br />
       BEST CHOICE  
@@ -28,8 +30,7 @@ permalink: "/aboutreliableimaging.html"
       <li><em><strong>Personal Service</strong></em><br />
       Reliable Imaging has a team of trained sales and service professionals who actively work with their clients to give the best service and value in the industry today.</li>
   </ul>    
-    
-		<br />
+  </div>
   </article>
   {% include "components/product-links.njk" %}
 </section>
